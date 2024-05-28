@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# An example of a ticket manager app using NextJS, shadcn/ui, TailWind CSS and NextAuth
+
+> By Mauro Schneider
+
 ## Getting Started
 
 First, run the development server:
