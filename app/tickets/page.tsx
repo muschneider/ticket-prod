@@ -5,7 +5,7 @@ import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import Pagination from "@/components/Pagination";
 import StatusFilter from "@/StatusFilter";
-import { Status } from "@prisma/client";
+import { Status, Ticket } from "@prisma/client";
 
 export interface SearchParams {
   status: Status;

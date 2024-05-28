@@ -7,13 +7,13 @@ import { getServerSession } from "next-auth";
 
 export async function POST(request: NextRequest) {
   const session = await getServerSession(options);
-  if (!session) {
-    return NextResponse.json({ error: "Not authenticated" }, { status: 401 });
-  }
-  if (session.user.role !== "ADMIN") {
-    return NextResponse.json({ error: "Not authorized" }, { status: 401 });
-  }
-
+  // if (!session) {
+  //   return NextResponse.json({ error: "Not authenticated" }, { status: 401 });
+  // }
+  // if (session.user.role !== "ADMIN") {
+  //   return NextResponse.json({ error: "Not authorized" }, { status: 401 });
+  // }
+  //
   const body = await request.json();
   const validation = userSchema.safeParse(body);
 
